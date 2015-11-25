@@ -7,7 +7,22 @@
     <link href='styles/main.css' rel='stylesheet' type="text/css">
   </head>
   <body ng-app='todoListApp'>
+
+    <h1>My ToDos</h1>
+    <div class="list">
+      <input type="checkbox">
+      <label class="editing-label">A Sample To Do!</label>
+      <input class="editing-label" type="text">
+    </div>
+    <div class="actions">
+      <a href="">Edit</a>
+      <a href="">Save</a>
+      <a href="" class="delete">Delete</a>
+    </div>
+
+    <!-- VENDORS -->
     <script src="vendor/angular.js"></script>
+    <!-- SCRIPTS -->
     <script src="scripts/app.js"></script>
   </body>
 </html>
