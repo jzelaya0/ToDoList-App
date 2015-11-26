@@ -18,8 +18,8 @@ angular.module('todoListApp')
       //simulate communication to API
     }
     // Request to save todo item
-    this.saveTodo = function(todo){
-      console.log("The " + todo + " was Saved!");
+    this.saveTodos = function(todos){
+      console.log(todos.length + " todos were Saved!");
       //simulate communication to API
     }
 
