@@ -5,7 +5,7 @@ angular.module('todoListApp')
     // Add a new todo
     $scope.addTodo = function(){
       var todo = {name: "This is a new todo!"}
-      $scope.todos.push(todo);
+      $scope.todos.unshift(todo);
     }
 
     // Check for changes in edit
