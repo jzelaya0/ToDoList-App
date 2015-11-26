@@ -1,7 +1,10 @@
 angular.module('todoListApp', [])
     .controller('mainCtrl', function($scope, dataService){
-      // Test dataService
-      $scope.helloConsole = dataService.helloConsole
+      // Add a new todo
+      $scope.addTodo = function(){
+        var todo = {name: "This is a new todo!"}
+        $scope.todos.push(todo);
+      }
 
       // Check for changes in edit
       $scope.change = function(){
